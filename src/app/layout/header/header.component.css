@@ -1,0 +1,12 @@
+.logo {
+    background-color: var(--secon);
+    padding-inline: 2rem;
+}
+
+.fixed-top {
+    border-bottom: 1px solid var(--txt);
+}
+
+header {
+    background-color: var(--bg);
+}

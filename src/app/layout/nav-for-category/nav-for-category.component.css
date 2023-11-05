@@ -1,0 +1,68 @@
+.navbar-brand {
+    font-family: 'Karantina', sans-serif;
+    font-size: 2.6rem;
+    color: var(--txt);
+    padding-inline: 2rem;
+}
+
+.navbar {
+    padding: 0;
+
+}
+
+.wr_navbar_toggler {
+
+    border-left: 1px solid var(--txt);
+    height: 72.4px;
+    align-items: center;
+    display: flex;
+    padding-inline: 2rem;
+
+}
+
+.navbar-dark {
+    color: var(--txt);
+}
+
+.nav-item {
+    font-family: 'Kodchasan';
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: larger;
+}
+
+.navbar-collapse {
+    border-top: 1px solid var(--txt);
+}
+
+.nav-item {
+    width: fit-content;
+    margin-left: 2rem;
+}
+
+.navbar-nav {
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.nav-link:hover {
+    color: var(--prim) !important;
+}
+
+.nav-link:active {
+    color: var(--prim) !important;
+    border: 1px solid var(--prim) !important;
+    border-radius: 25px;
+}
+
+.nav-link {
+    padding-inline: 1rem;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+@media (min-width:992px) {
+    .navbar-collapse {
+        border-top: none;
+    }
+}

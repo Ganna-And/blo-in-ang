@@ -1,0 +1,17 @@
+.featured {
+    color: var(--txt);
+}
+
+.container {
+    background-color: var(--prim);
+    color: var(--bg);
+    text-align: center;
+}
+
+.container .badge {
+    color: var(--txt);
+}
+
+.latest span {
+    color: var(--txt);
+}

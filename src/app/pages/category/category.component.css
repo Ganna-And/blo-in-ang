@@ -1,0 +1,5 @@
+.category {
+    border-top: 1px solid var(--txt);
+    background-color: var(--txt);
+    color: var(--bg);
+}

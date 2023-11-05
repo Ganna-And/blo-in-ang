@@ -1,1 +1,104 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Karantina:wght@700&family=Kodchasan:wght@400;700&display=swap');
+@import "~bootstrap-icons/font/bootstrap-icons";
+
+
+:root {
+    --prim: #B5AE04;
+    --bg: #1C1B01;
+    --txt: #F8F7E8;
+    --txt-sec: #E8F0F8;
+    --secon: #792525;
+}
+
+li {
+    list-style-type: none;
+}
+
+ul {
+    padding: 0;
+}
+
+.ordered_li {
+    list-style-type: upper-alpha;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Karantina', sans-serif;
+}
+
+p {
+    font-family: 'Kodchasan', sans-serif;
+}
+
+body {
+    font-family: 'Karantina', sans-serif;
+    background-color: var(--bg) !important;
+    color: var(--txt) !important;
+    min-height: 100vh;
+}
+
+a {
+    color: var(--txt) !important;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none !important;
+}
+
+
+
+.form-control {
+    border: 1px solid var(--bg);
+    width: 100%;
+}
+
+input:focus,
+textarea:focus {
+    border: 1px solid var(--bg) !important;
+    box-shadow: 3px 3px 8px rgba(23, 22, 1, 0.5) !important;
+    background-color: var(--txt);
+}
+
+.btn-sub {
+    background-color: var(--bg);
+    color: var(--txt);
+    border-radius: 10px;
+    transition: 0.4s ease;
+    text-transform: uppercase;
+    padding-inline: 1rem;
+    font-weight: 500;
+}
+
+
+
+p {
+    text-align: center;
+    text-wrap: balance;
+}
+
+.btn-sub:hover {
+    background-color: var(--prim);
+    color: var(--bg);
+
+}
+
+.dark_theme {
+    background-color: var(--bg);
+    color: var(--txt);
+}
+
+.prim_theme {
+    background-color: var(--prim);
+    color: var(--bg);
+}
+
+.border_dark {
+    border: 1px solid var(--bg);
+}

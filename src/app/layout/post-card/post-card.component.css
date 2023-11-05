@@ -1,0 +1,21 @@
+.card {
+    background: url('/assets/Maak_.jpg') center;
+    background-size: cover;
+    border: 1px solid var(--txt);
+    padding-top: calc(100% * 276 / 240);
+}
+
+.card_wr {
+
+    border-bottom: 1px solid var(--txt);
+    margin-bottom: 2rem;
+}
+
+.badge {
+    border-bottom: 1px solid var(--txt);
+    background-color: var(--bg) !important;
+}
+
+.card p {
+    background-color: var(--bg);
+}

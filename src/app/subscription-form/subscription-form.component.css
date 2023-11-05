@@ -1,0 +1,13 @@
+.form-control {
+    background-color: var(--txt);
+
+}
+
+.card {
+    background-color: var(--txt);
+    color: var(--bg);
+}
+
+.card-body {
+    max-width: 1100px;
+}

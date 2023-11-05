@@ -1,0 +1,18 @@
+.post {
+    background-color: var(--txt);
+    color: var(--bg);
+    border-top: 1px solid var(--bg);
+}
+
+.img_post {
+    background: url('/assets/Maak_.jpg') center no-repeat;
+    width: 100%;
+    min-height: 60vh;
+    height: auto;
+}
+
+.post_p {
+    text-align: center;
+    text-wrap: balance;
+    padding-inline: 2rem;
+}
