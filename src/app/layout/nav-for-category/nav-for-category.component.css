@@ -28,7 +28,7 @@
     font-family: 'Kodchasan';
     text-transform: uppercase;
     font-weight: 600;
-    font-size: larger;
+    font-size: 0.8rem;
 }
 
 .navbar-collapse {
@@ -37,11 +37,10 @@
 
 .nav-item {
     width: fit-content;
-    margin-left: 2rem;
 }
 
 .navbar-nav {
-    width: 100%;
+    width: 80%;
     justify-content: space-evenly;
 }
 

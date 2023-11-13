@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { CategoriesService } from 'src/app/services/categories.service';
 
 @Component({
   selector: 'app-nav-for-category',
@@ -6,5 +7,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./nav-for-category.component.css']
 })
 export class NavForCategoryComponent {
+
+  categoryArray?:Array<any>; 
+
+
+  constructor(private categoryService: CategoriesService){
+    categoryService.loadData().subscribe(val=>{
+      this.categoryArray = val
+    })
+  }
+
+  
+
+
 
 }

@@ -1,27 +1,25 @@
 <div class="w-100 post">
   <div class="container">
-    <h1>Lorem ipsum dolor sit amet.</h1>
+    <h1>{{ singlePost?.title }}</h1>
   </div>
   <div class="w-100 post">
     <div class="row pt-3">
-      <div class="col-lg-3 col-md-4 col-sm-6 text-center">
+      <div class="col-lg-3 col-md-3 col-sm-6 text-center">
         <p>
-          <span class="text-uppercase"><b>Category:</b> </span> Design
+          <span class="text-uppercase"><b>Category:</b> </span
+          >{{ singlePost?.category.category }}
         </p>
       </div>
-      <div class="col-lg-3 col-md-4 col-sm-6 text-center">
+      <div class="col-lg-3 col-md-3 col-sm-6 text-center">
         <p>
-          <span class="text-uppercase"><b>Read Time:</b> </span> 45 min
+          <span class="text-uppercase"><b>Created at:</b> </span>
+          {{ singlePost?.createdAt.toMillis() | date }}
         </p>
       </div>
-      <div class="col-lg-3 col-md-4 col-sm-6 text-center">
+      <div class="col-lg-3 col-md-3 col-sm-6 text-center">
         <p>
-          <span class="text-uppercase"><b>Author:</b> </span> Mark Heltz
-        </p>
-      </div>
-      <div class="col-lg-3 col-md-4 col-sm-6 text-center">
-        <p>
-          <span class="text-uppercase"><b>Posted:</b> </span> 10.12.23
+          <span class="text-uppercase"><b>Views:</b> </span>
+          {{ singlePost?.views }}
         </p>
       </div>
     </div>
@@ -30,36 +28,26 @@
     <div class="row mt-3 px-4">
       <div class="col-lg-9 col-md-8 col-sm-12">
         <div class="row">
-          <div class="col-lg-6 col-md-12 img_post"></div>
-          <div class="col-lg-6 col-md-12">
-            <p class="post_p">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Assumenda et quaerat doloribus in animi libero blanditiis, nobis
-              eius laboriosam. Velit asperiores, corporis quibusdam placeat
-              laboriosam quidem quasi cumque dolorem harum rerum rem,
-              consectetur itaque porro quisquam distinctio assumenda ipsum
-              molestiae, dicta natus atque! Ullam possimus aliquid, aliquam
-              tenetur adipisci inventore suscipit autem ea mollitia enim
-              accusamus voluptates, nemo accusantium sunt recusandae totam
-              repudiandae labore modi? Quasi eius ab ullam nemo suscipit
-              corporis! Maiores nostrum porro repellat facilis iusto. Quis,
-              reiciendis.
-            </p>
+          <div class="col-md-12">
+            <div class="d-flex justify-content-center">
+              <img [src]="singlePost?.pathPostImg" alt="Featured Post Image" />
+            </div>
+          </div>
+          <div class="col-md-12 mt-2">
+            <p class="post_p" [innerHTML]="singlePost?.content"></p>
           </div>
 
           <div class="col-lg-9 col-md-12 mx-auto mt-3">
             <app-comment-form></app-comment-form>
-            <app-comment-list></app-comment-list>
           </div>
         </div>
       </div>
       <div class="col-lg-3 col-md-4">
         <div
           class="d-flex flex-column flex-sm-row flex-md-column justify-content-center"
+          *ngFor="let similarPost of similarPosts"
         >
-          <app-post-card></app-post-card>
-          <app-post-card></app-post-card>
-          <app-post-card></app-post-card>
+          <app-post-card [postData]="similarPost"></app-post-card>
         </div>
       </div>
     </div>

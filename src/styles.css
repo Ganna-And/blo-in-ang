@@ -76,7 +76,19 @@ textarea:focus {
     font-weight: 500;
 }
 
+button:disabled {
+    color: #5a5a5a;
+}
 
+footer {
+    border-top: 1px solid var(--txt);
+}
+
+button:disabled:hover {
+    color: #5a5a5a;
+    background-color: var(--bg);
+
+}
 
 p {
     text-align: center;

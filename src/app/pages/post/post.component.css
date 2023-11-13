@@ -11,6 +11,15 @@
     height: auto;
 }
 
+
+
+img {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    max-height: 80vh;
+}
+
 .post_p {
     text-align: center;
     text-wrap: balance;

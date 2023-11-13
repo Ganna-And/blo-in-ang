@@ -14,13 +14,13 @@
     </button>
   </div>
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-    <div class="navbar-nav mt-1">
-      <a class="nav-item nav-link active" href="#"
-        >Design <span class="sr-only">(current)</span></a
+    <div class="navbar-nav mt-1" *ngFor="let category of categoryArray">
+      <a
+        class="nav-item nav-link active"
+        href="#"
+        [routerLink]="['/category', category.data.category, category.id]"
+        >{{ category.data.category }}<span class="sr-only">(current)</span></a
       >
-      <a class="nav-item nav-link" href="#">Sport</a>
-      <a class="nav-item nav-link" href="#">Inspiration</a>
-      <a class="nav-item nav-link" href="#">Politics</a>
     </div>
   </div>
 </nav>

@@ -1,9 +1,40 @@
-.card {
-    background: url('/assets/Maak_.jpg') center;
-    background-size: cover;
-    border: 1px solid var(--txt);
-    padding-top: calc(100% * 276 / 240);
+.card_wr {
+    min-height: 25rem;
 }
+
+.card {
+    height: 21.8rem;
+    cursor: pointer;
+    transition: transform 1s ease-in;
+}
+
+.card:hover img {
+    transform: scale(1.01);
+}
+
+img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.figure-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.post_title {
+
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+}
+
+
 
 .card_wr {
 
